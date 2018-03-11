@@ -34,7 +34,7 @@ describe('Circle', () => {
     const spy = sinon.spy(Circle.prototype, 'render')
     const wrapper = shallow(<Circle color='red' />);
     wrapper.setProps({ color: 'red' });
-    expect(spy.calledOnce).to.be.true;
+    expect(spy.calledOnce).to.be.false;
   });
 });
 
